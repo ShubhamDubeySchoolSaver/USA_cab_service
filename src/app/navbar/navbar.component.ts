@@ -1,17 +1,17 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
+import { ProfileComponent } from '../profile/profile.component';
+import {NgIf} from '@angular/common'
+import { EarningsComponent } from '../earnings/earnings.component';
+
+
 
 @Component({
   selector: 'app-navbar',
-  standalone:true,
-  template: '<h1>Navbar component</h1>',
-  styles:`h1{
-          color: red;`,
-  
+  standalone: true,
+  imports: [ProfileComponent,NgIf,EarningsComponent],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'        
-
+  styleUrl: './navbar.component.css'
 })
-
-export class AppNavbar{
-
+export class NavbarComponent {
+  showPopup = false;
 }
