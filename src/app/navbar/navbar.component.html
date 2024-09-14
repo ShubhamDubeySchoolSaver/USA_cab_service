@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <div class="nav-items">
+
+    <a href="#home" class="nav-link">Home</a>
+    <div class="nav-link earnings" (mouseover)="showPopup = true" (mouseleave)="showPopup = false">
+      <span>Earnings</span>
+      <div class="earnings-popup" *ngIf="showPopup">
+        <app-earnings></app-earnings>
+      </div>
+    </div>
+  </div>
+  <app-profile></app-profile>
+</nav>
