@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# DEVELOPMENT STEPS
+
+## Component creation
+
+Every element in the website are called as components in Angular. combination of these componets gives us the website. To create a component in Angular use `ng generate component component-name`  command in CLI, it will generate a component template in src/app directory with comonent-name.
+
+## Placement of Components
+
+These components are called in [app.component.html]() .
+
+## Editing Components
+
+The components folder consists of html, css and ts files which are used to fill the structure, design and functionality of these components.
+
+
