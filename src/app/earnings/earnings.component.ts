@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './earnings.component.css'
 })
 export class EarningsComponent {
-
+  city="chennai"
+  fare= 300
 }
+

@@ -1,11 +1,15 @@
 <nav class="navbar">
+  <div>logo</div>
   <div class="nav-items">
 
     <a href="#home" class="nav-link">Home</a>
     <div class="nav-link earnings" (mouseover)="showPopup = true" (mouseleave)="showPopup = false">
-      <span>Earnings</span>
+      <a href="#earnings-page" style="color: white; text-decoration: none;"><span>Earnings</span></a>
       <div class="earnings-popup" *ngIf="showPopup">
-        <app-earnings></app-earnings>
+        <p>earnings works!</p>
+        <h3>Earnings of the Day</h3>
+        <p>$150.00</p>
+        <a href="#earnings-page"><button class="earning-page-button">My Earnings <div>icon</div> </button></a>
       </div>
     </div>
   </div>
