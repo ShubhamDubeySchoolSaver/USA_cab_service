@@ -2,14 +2,14 @@
 <div class="container">
   <!-- Header with back arrow and title -->
   <header>
-    <div (click)='navigateToHome()' class="back-arrow">&#8592;</div>
+    <div (click)='navigateToHome()' class="back-arrow"><img src="../../assets/arrow_13494572.png" width="30" height="30"></div>
     <h1>Daily</h1>
   </header>
 
   <!-- Date and Earnings -->
   <section class="date-earnings">
-    <div class="date">Mar 15</div>
-    <div class="earnings">$76.78</div>
+    <div class="date">{{ today | date }} </div>
+    <div class="earnings">{{ earnings | currency }}</div>
   </section>
 
   <!-- Key Metrics -->
@@ -19,7 +19,7 @@
       <div class="label">TRIPS</div>
     </div>
     <div class="metric">
-      <div class="value">2h 45m</div>
+      <div class="value">{{ onlineHours }}</div>
       <div class="label">ONLINE</div>
     </div>
     <div class="metric">

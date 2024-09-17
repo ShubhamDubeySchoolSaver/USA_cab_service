@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ProfileComponent } from '../profile/profile.component';
-import {NgIf} from '@angular/common'
+import {NgIf, NgOptimizedImage} from '@angular/common'
 import { EarningsComponent } from '../earnings/earnings.component';
 import { Router, RouterLink, RouterLinkActive, RouterLinkWithHref, RouterOutlet } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router, RouterLink, RouterLinkActive, RouterLinkWithHref, RouterOutlet 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,RouterLinkActive,RouterLinkWithHref,ProfileComponent,NgIf,EarningsComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive,RouterLinkWithHref,ProfileComponent,NgIf,EarningsComponent,NgOptimizedImage],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
