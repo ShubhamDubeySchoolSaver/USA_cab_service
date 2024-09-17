@@ -2,10 +2,10 @@
 <div class="map-container">
   <!-- Top bar -->
   <div class="top-bar">
-    <div class="search-icon">🔍</div>
+    <div class="search-icon">☰</div>
     <div class="earnings-badge">$76.78</div>
-    <div class="profile-pic">
-      <img src="https://via.placeholder.com/40" alt="Profile">
+    <div  class="profile-pic">
+      <a routerLink="/profile" routerLinkActive="active"><img src="https://via.placeholder.com/40" alt="Profile"></a>
     </div>
   </div>
 
@@ -16,15 +16,17 @@
 
   <!-- Central navigation icon -->
   <div class="navigation-icon">▲</div>
-
+@if(showRideRequest){
+  <app-ride-requests></app-ride-requests>
+}
   <!-- Go button -->
   <div class="go-button">GO</div>
 
   <!-- Bottom bar -->
-  <div class="bottom-bar">
+  <!-- <div class="bottom-bar">
   <div class ="blank"></div>
     <div class="status">You're offline</div>
-    <div class="menu-icon">☰</div>
-  </div>
+    <div class="menu-icon"></div>
+  </div> -->
 </div>
 

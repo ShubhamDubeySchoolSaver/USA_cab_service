@@ -1,3 +1,7 @@
+
+
+<router-outlet></router-outlet>
+<!-- 
 <nav class="navbar">
   <div>logo</div>
   <div class="nav-items">
@@ -17,7 +21,10 @@
   <div (click)="navigateToProfile()" class="profile">
     <img src="../../assets/icons8-male-user-96.png" alt="Profile Photo" class="profile-photo">
   </div>
+</nav> -->
+<nav class="navbar">
+    <a routerLink="/" routerLinkActive="active" class="nav-item"><i class="icon home-icon">🏠</i></a>
+    <a routerLink="/earnings" routerLinkActive="active" class="nav-item"><i class="icon search-icon">$</i></a>
+    <!-- <a href="#" class="nav-item"><i class="icon settings-icon">⚙️</i></a>
+    <a (click)="toggleTheme()" class="nav-item theme-toggle">🌓</a> -->
 </nav>
-
-
-<router-outlet></router-outlet>
