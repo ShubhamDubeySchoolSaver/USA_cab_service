@@ -1,13 +1,23 @@
 <nav class="navbar">
+  <div>logo</div>
   <div class="nav-items">
 
-    <a href="#home" class="nav-link">Home</a>
-    <div class="nav-link earnings" (mouseover)="showPopup = true" (mouseleave)="showPopup = false">
-      <span>Earnings</span>
-      <div class="earnings-popup" *ngIf="showPopup">
-        <app-earnings></app-earnings>
-      </div>
+    <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
+    <div class="nav-link earnings">
+      <a (click)="navigateToEarnings()" style="color: white; text-decoration: none;">Earnings</a>
+      @if(showPopup){
+        <div class="earnings-popup" >
+          <h3>Earnings of the Day</h3>
+          <p>$150.00</p>
+          <button (click)="navigateToEarnings()" class="earning-page-button">My Earnings </button>
+        </div>
+      }
     </div>
   </div>
-  <app-profile></app-profile>
+  <div (click)="navigateToProfile()" class="profile">
+    <img src="../../assets/icons8-male-user-96.png" alt="Profile Photo" class="profile-photo">
+  </div>
 </nav>
+
+
+<router-outlet></router-outlet>
