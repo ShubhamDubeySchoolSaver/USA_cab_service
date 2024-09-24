@@ -25,6 +25,16 @@ header {
   align-items: center;
 }
 
+.earning_heading{
+  color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .back-arrow {
   font-size: 24px;
   margin-right: 10px;

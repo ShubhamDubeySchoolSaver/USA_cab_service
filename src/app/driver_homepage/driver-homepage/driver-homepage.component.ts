@@ -11,4 +11,5 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 })
 export class DriverHomepageComponent {
   showRideRequest=true;
+  earnings=54.32;
 }

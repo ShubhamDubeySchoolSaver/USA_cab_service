@@ -82,6 +82,30 @@ details[open] summary {
   justify-content: center;
 }
 
+.loginModal {
+    background-color: #0006;
+    font-family: RobotoDraft, Roboto, "Helvetica Neue, Helvetica, Arial", sans-serif;
+    height: 100%;
+    min-width: 300px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-top: 70px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1004;
+  align-items: center;
+  justify-content: center;
+   background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+ 
+}
+
 .trip-card {
   background-color: white;
   width: 320px;
