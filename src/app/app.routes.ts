@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { DriverHomepageComponent } from './driver-homepage/driver-homepage.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RideRequestsComponent } from './ride-requests/ride-requests.component';
-import { EarningsComponent } from './earnings/earnings.component';
-import { ProfileComponent } from './profile/profile.component';
+import { DriverHomepageComponent } from './driver_homepage/driver-homepage/driver-homepage.component';
+import { NavbarComponent } from './driver_homepage/navbar/navbar.component';
+import { RideRequestsComponent } from './driver_homepage/ride-requests/ride-requests.component';
+import { EarningsComponent } from './driver_homepage/earnings/earnings.component';
+import { ProfileComponent } from './driver_homepage/profile/profile.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/driver-homepage', pathMatch: 'full' },
