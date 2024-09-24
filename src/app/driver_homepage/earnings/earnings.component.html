@@ -2,14 +2,14 @@
 <div class="container">
   <!-- Header with back arrow and title -->
   <header>
-    <div (click)='navigateToHome()' class="back-arrow">&#8592;</div>
-    <h1>Daily</h1>
+    <div (click)='navigateToHome()' class="back-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg></div>
+    <div class="earning_heading">Daily</div>
   </header>
 
   <!-- Date and Earnings -->
   <section class="date-earnings">
-    <div class="date">Mar 15</div>
-    <div class="earnings">$76.78</div>
+    <div class="date">{{ today | date }} </div>
+    <div class="earnings">{{ earnings | currency }}</div>
   </section>
 
   <!-- Key Metrics -->
@@ -19,7 +19,7 @@
       <div class="label">TRIPS</div>
     </div>
     <div class="metric">
-      <div class="value">2h 45m</div>
+      <div class="value">{{ onlineHours }}</div>
       <div class="label">ONLINE</div>
     </div>
     <div class="metric">

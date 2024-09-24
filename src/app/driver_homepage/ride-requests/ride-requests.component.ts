@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
 export class RideRequestsComponent {
   ridersRequest=3;
   requests=[{id: 0, name: 'Sarah',fare: 30}, {id: 1, name: 'Amy',fare: 30}, {id: 2, name: 'Rachel',fare: 30}, {id: 3, name: 'Jessica',fare: 30}, {id: 4, name: 'Poornima',fare: 30}];
-  isEnabled=true;
+  isEnabled=false;
+  multiRides=false;
 }
 // scripts.ts
 
