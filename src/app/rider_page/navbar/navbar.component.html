@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">RIDE</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active ml-3">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active ml-3">
+        <a class="nav-link" routerLink="/profile">Profile <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active ml-3">
+        <a class="nav-link" routerLink="/food-delivery">Food Delivery <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- <li class="nav-item ml-3">
+        <form class="form-inline">
+            <button class="btn btn-outline-light my-2 my-sm-0" routerLink="/searchbar" type="button">Search</button>
+        </form>
+    </li> -->
+      
+      <li class="nav-item ml-3">
+          <form class="form-inline">
+              <button class="btn btn-outline-light my-2 my-sm-0" routerLink="/bookings" type="button">Bookings</button>
+          </form>
+      </li>
+    </ul>
+
+    <form class="form-inline ml-auto">
+      <button class="btn btn-success my-2 my-sm-0" type="button">Login</button>
+    </form>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
