@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
+## Initial Setup
+
+To run this project in your local system you need to follow these steps 
+1. clone the repo using `git clone`.
+2. open the the cloned repo in the command prompt and use `npm install` command to setup node modules in your directory. For this step to run successfully you need to have node.js installed in your local system.
+3. Install the Angular CLI globally:
+
+```
+npm install -g @angular/cli
+```
+so that you can use cli to manage yor project.
+4. After finishing these steps follow the Development Steps section below to contributet to the project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
