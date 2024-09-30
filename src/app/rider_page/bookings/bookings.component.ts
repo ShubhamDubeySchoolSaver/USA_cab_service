@@ -129,7 +129,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { LocationService } from '../../services/location.service'; // Your location service
+// import { LocationService } from '../../services/location.service'; // Your location service
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
@@ -146,7 +146,7 @@ export class BookingsComponent implements OnInit {
   dropoffLocation: string = ''; // Define the property
   suggestions: string[] = []; // Array to store location suggestions
 
-  constructor(private locationService: LocationService) {}
+  // constructor(private locationService: LocationService) {}
 
   ngOnInit(): void {
     this.getCurrentLocation(); // Fetch current location on component initialization
@@ -155,8 +155,8 @@ export class BookingsComponent implements OnInit {
   // Fetch user's current location
   async getCurrentLocation() {
     try {
-      const location = await this.locationService.getLocation();
-      this.pickupLocation = `${location.city}, ${location.region}, ${location.country_name}`;
+      // const location = await this.locationService.getLocation();
+      // this.pickupLocation = `${location.city}, ${location.region}, ${location.country_name}`;
     } catch (error) {
       console.error('Error fetching location:', error);
     }

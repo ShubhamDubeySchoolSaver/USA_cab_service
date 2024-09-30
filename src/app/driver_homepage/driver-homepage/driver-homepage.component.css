@@ -14,12 +14,13 @@ body {
   width: 100%;
   max-width: 400px;
   height: 100vh;
-  background-image: url('https://via.placeholder.com/800x1200'); /* Replace with a real map image */
+  /* background-image: url('https://via.placeholder.com/800x1200'); Replace with a real map image */
   background-size: cover;
   background-position: center;
   align-items: center;
   margin: 20px auto;
-  
+  display: flex;
+  justify-content: center;
 }
 
 /* Top Bar */

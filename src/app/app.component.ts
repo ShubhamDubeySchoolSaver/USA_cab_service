@@ -5,11 +5,13 @@ import { NavbarComponent } from './driver_homepage/navbar/navbar.component';
 import { DriverHomepageComponent } from './driver_homepage/driver-homepage/driver-homepage.component';
 import { EarningsComponent } from './driver_homepage/earnings/earnings.component';
 import { RideRequestsComponent } from './driver_homepage/ride-requests/ride-requests.component';
+import { SearchbarComponent } from './rider_page/searchbar/searchbar.component';
+import { BookingsComponent } from './rider_page/bookings/bookings.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent],
+  imports: [RouterOutlet, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent,SearchbarComponent,NavbarComponent,BookingsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
