@@ -5,11 +5,12 @@ import { NavbarComponent } from './driver_homepage/navbar/navbar.component';
 import { DriverHomepageComponent } from './driver_homepage/driver-homepage/driver-homepage.component';
 import { EarningsComponent } from './driver_homepage/earnings/earnings.component';
 import { RideRequestsComponent } from './driver_homepage/ride-requests/ride-requests.component';
+import { LoginPageComponent } from './restaurant/login-page/login-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent],
+  imports: [RouterOutlet,LoginPageComponent, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
