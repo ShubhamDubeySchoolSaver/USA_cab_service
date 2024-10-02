@@ -7,11 +7,13 @@ import { EarningsComponent } from './driver_homepage/earnings/earnings.component
 import { RideRequestsComponent } from './driver_homepage/ride-requests/ride-requests.component';
 import { SearchbarComponent } from './rider_page/searchbar/searchbar.component';
 import { BookingsComponent } from './rider_page/bookings/bookings.component';
+import { DriverProfileUpdateComponent } from './driver-profile-update/driver-profile-update.component';
+import { LoginPageComponent } from './restaurant/login-page/login-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent,SearchbarComponent,NavbarComponent,BookingsComponent],
+  imports: [RouterOutlet, LoginPageComponent, NavbarComponent,EarningsComponent,RideRequestsComponent,DriverHomepageComponent,FoDelCusHomPComponent,SearchbarComponent,NavbarComponent,BookingsComponent,DriverProfileUpdateComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
