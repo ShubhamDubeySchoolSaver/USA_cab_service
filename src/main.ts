@@ -3,19 +3,20 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AgmCoreModule } from '@agm/core';
+import { DriverHomepageComponent } from './app/driverHomepage/driverHomepage/driverHomepage.component';
+import { LoginPageComponent } from './app/restaurantLoginpage/loginPage/loginPage.component';
+import { RH_NavBarComponent } from './app/riderHomepage/RHnavBar/RH_navBar.component';
+import { DH_NavbarComponent } from './app/driverHomepage/DH_navBar/DH_navBar.component';
 
-import { DH_NavbarComponent } from './app/driver_homepage/navbar/navbar.component';
-import { DriverProfileUpdateComponent } from './app/driver_profile/driver-profile-update.component';
-import { LoginPageComponent } from './app/restaurant_loginpage/login-page/login-page.component';
-import { RP_NavbarComponent } from './app/rider_homepage/navbar/navbar.component';
+
 
 
 
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
-bootstrapApplication(DriverProfileUpdateComponent,appConfig).catch((err) => console.error(err));
+bootstrapApplication(DriverHomepageComponent,appConfig).catch((err) => console.error(err));
 bootstrapApplication(LoginPageComponent,appConfig).catch((err) => console.error(err));
-bootstrapApplication(RP_NavbarComponent,appConfig).catch((err) => console.error(err));
+bootstrapApplication(RH_NavBarComponent,appConfig).catch((err) => console.error(err));
+
 bootstrapApplication(DH_NavbarComponent,appConfig).catch((err) => console.error(err));
 
 // @NgModule({
