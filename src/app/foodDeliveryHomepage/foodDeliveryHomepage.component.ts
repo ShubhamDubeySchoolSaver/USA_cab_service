@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-fo-del-cus-hom-p',
   standalone: true,
   imports: [],
-  templateUrl: './fo-del-cus-hom-p.component.html',
-  styleUrl: './fo-del-cus-hom-p.component.css'
+  templateUrl: './foodDeliveryHomepage.component.html',
+  styleUrl: './foodDeliveryHomepage.component.css'
 })
-export class FoDelCusHomPComponent {
+export class FoodDeliveryHomepageComponent {
 
 }

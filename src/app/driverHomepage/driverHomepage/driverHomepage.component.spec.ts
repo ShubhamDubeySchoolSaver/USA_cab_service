@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { DriverHomepageComponent } from './driverHomepage.component';
 
-import { DriverHomepageComponent } from './driver-homepage.component';
+
 
 describe('DriverHomepageComponent', () => {
   let component: DriverHomepageComponent;

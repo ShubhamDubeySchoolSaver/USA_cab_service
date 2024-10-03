@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { RideRequestsComponent } from "../ride-requests/ride-requests.component";
+
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { RideRequestsComponent } from '../rideRequests/rideRequests.component';
 
 
 @Component({
   selector: 'app-driver-homepage',
   standalone: true,
   imports: [RideRequestsComponent,RouterOutlet,RouterLink,RouterLinkActive,GoogleMapsModule],
-  templateUrl: './driver-homepage.component.html',
-  styleUrl: './driver-homepage.component.css'
+  templateUrl: './driverHomepage.component.html',
+  styleUrl: './driverHomepage.component.css'
 })
 export class DriverHomepageComponent implements OnInit {
 

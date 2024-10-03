@@ -5,9 +5,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   selector: 'app--rp-navbar',
   standalone: true,
   imports: [RouterOutlet,RouterLink,RouterLinkActive],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './RH_navBar.component.html',
+  styleUrl: './RH_navBar.component.css'
 })
-export class RP_NavbarComponent {
+export class RP_NavBarComponent {
 
 }

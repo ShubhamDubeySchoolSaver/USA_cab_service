@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-ride-requests',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './ride-requests.component.html',
-  styleUrl: './ride-requests.component.css'
+  templateUrl: './rideRequests.component.html',
+  styleUrl: './rideRequests.component.css'
 })
 export class RideRequestsComponent {
   ridersRequest=3;

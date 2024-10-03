@@ -10,7 +10,7 @@ import { RouterOutlet,RouterLink,RouterLinkActive } from '@angular/router';
   templateUrl: './searchbar.component.html',
   styleUrls: ['./searchbar.component.css']
 })
-export class SearchbarComponent {
+export class SearchBarComponent {
   selectedRideType: string = 'Auto';
   rides = [
     {

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-createacc',
+  selector: 'app-createAccount',
   standalone: true,
   imports: [],
-  templateUrl: './createacc.component.html',
-  styleUrl: './createacc.component.css'
+  templateUrl: './createAccount.component.html',
+  styleUrl: './createAccount.component.css'
 })
-export class CreateaccComponent {
+export class CreateAccountComponent {
 
 }

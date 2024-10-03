@@ -10,8 +10,8 @@ import { Router, RouterLink, RouterLinkActive, RouterLinkWithHref, RouterOutlet 
   selector: 'app-dh-navbar',
   standalone: true,
   imports: [RouterOutlet,RouterLink,RouterLinkActive,RouterLinkWithHref,ProfileComponent,NgIf,EarningsComponent,NgOptimizedImage],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './DH_navBar.component.html',
+  styleUrl: './DH_navBar.component.css'
 })
 export class DH_NavbarComponent {
   showPopup = false;

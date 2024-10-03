@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-driver-profile-update',
   standalone: true,
   imports: [],
-  templateUrl: './driver-profile-update.component.html',
-  styleUrl: './driver-profile-update.component.css'
+  templateUrl: './driverProfile.component.html',
+  styleUrl: './driverProfile.component.css'
 })
 export class DriverProfileUpdateComponent {
   

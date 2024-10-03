@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoginPageComponent } from './restaurant_loginpage/login-page/login-page.component';
-import { FoDelCusHomPComponent } from './food_delivery_homepage/fo-del-cus-hom-p.component';
-import { RP_NavbarComponent } from './rider_homepage/navbar/navbar.component';
-import { DH_NavbarComponent } from './driver_homepage/navbar/navbar.component';
-
+import { DH_NavbarComponent } from './driverHomepage/DH_navBar/DH_navBar.component';
+import { LoginPageComponent } from './restaurantLoginpage/loginPage/loginPage.component';
+import { FoodDeliveryHomepageComponent } from './foodDeliveryHomepage/foodDeliveryHomepage.component';
+import { RP_NavBarComponent } from './riderHomepage/RHnavBar/RH_navBar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,LoginPageComponent, DH_NavbarComponent,FoDelCusHomPComponent,RP_NavbarComponent],
+  imports: [RouterOutlet,LoginPageComponent, DH_NavbarComponent,FoodDeliveryHomepageComponent,RP_NavBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
