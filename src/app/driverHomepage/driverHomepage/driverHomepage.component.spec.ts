@@ -1,0 +1,24 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { DriverHomepageComponent } from './driverHomepage.component';
+
+
+
+describe('DriverHomepageComponent', () => {
+  let component: DriverHomepageComponent;
+  let fixture: ComponentFixture<DriverHomepageComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [DriverHomepageComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(DriverHomepageComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
