@@ -11,10 +11,12 @@ import { DH_NavbarComponent } from './app/driverHomepage/DH_navBar/DH_navBar.com
 
 
 
+
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 bootstrapApplication(DriverHomepageComponent,appConfig).catch((err) => console.error(err));
 bootstrapApplication(LoginPageComponent,appConfig).catch((err) => console.error(err));
 bootstrapApplication(RH_NavBarComponent,appConfig).catch((err) => console.error(err));
+
 bootstrapApplication(DH_NavbarComponent,appConfig).catch((err) => console.error(err));
 
 // @NgModule({
