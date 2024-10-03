@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-fo-del-cus-hom-p',
+  selector: 'app-food-delivery-homepage',
   standalone: true,
   imports: [],
   templateUrl: './foodDeliveryHomepage.component.html',
