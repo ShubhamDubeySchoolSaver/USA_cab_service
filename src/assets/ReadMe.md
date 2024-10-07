@@ -1,0 +1,1 @@
+Assets folder is a folder for static files served from the server to the browser. These include images, fonts and similar. If you want to store anything per user, use local storage or built in browser db.
