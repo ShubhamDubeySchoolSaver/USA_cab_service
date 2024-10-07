@@ -40,6 +40,5 @@ export default function RideRequest(){
         </div>
       </div></>
 // }
-
   );
 }
