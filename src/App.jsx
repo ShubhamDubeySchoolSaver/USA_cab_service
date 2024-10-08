@@ -3,7 +3,7 @@ import Navbar from "./components/navbarmain/Navbar";
 
 function App() {
   return (
-    <div className="font-bold text-5xlxl">
+    <div>
       <Navbar />
     </div>
   );
