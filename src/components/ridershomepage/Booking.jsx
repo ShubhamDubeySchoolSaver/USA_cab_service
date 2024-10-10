@@ -1,60 +1,91 @@
+import { useState } from "react";
 
+export default function Booking() {
+  // State for pickup and drop-off locations
+  const [pickupLocation, setPickupLocation] = useState("");
+  const [dropoffLocation, setDropoffLocation] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
 
-export default function DH_navBar(){
-  return(
-    
+  // Handler for input change (you can replace this with actual logic to fetch suggestions)
+  const handlePickupLocationInput = (e) => {
+    setPickupLocation(e.target.value);
+    // Fetch or filter suggestions based on input (mock suggestions here)
+    setSuggestions(["Location 1", "Location 2", "Location 3"]);
+  };
 
-  <><div class="container mt-3">
+  const handleDropoffLocationInput = (e) => {
+    setDropoffLocation(e.target.value);
+    // Fetch or filter suggestions based on input (mock suggestions here)
+    setSuggestions(["Location A", "Location B", "Location C"]);
+  };
 
-      {/* <!-- Pickup Location --> */}
-      <div class="form-group mt-4">
-        <label for="pickupLocation"><strong>Pickup Location:</strong></label>
+  const selectLocation = (suggestion) => {
+    setPickupLocation(suggestion); // or setDropoffLocation if relevant
+    setSuggestions([]); // Clear suggestions after selection
+  };
+
+  return (
+    <div className="container mt-3">
+      {/* Pickup Location */}
+      <div className="form-group mt-4">
+        <label htmlFor="pickupLocation">
+          <strong>Pickup Location:</strong>
+        </label>
         <input
           type="text"
           id="pickupLocation"
-          class="form-control"
-          // [(ngModel)]="pickupLocation"
-          // (input)="onPickupLocationInput()" 
-          placeholder="Enter pickup location" />
-
-        {/* <!-- Suggestions Dropdown --> */}
-        <ul class="list-group mt-2"
-        >
-          <li>
-          {/* // class="list-group-item"
-            // *ngFor="let suggestion of suggestions"
-            // (click)="selectPickupLocation(suggestion)" */}
-            
-            {{ suggestion }}
-          </li>
-        </ul>
+          className="form-control"
+          value={pickupLocation}
+          onChange={handlePickupLocationInput}
+          placeholder="Enter pickup location"
+        />
+        {/* Suggestions Dropdown */}
+        {suggestions.length > 0 && (
+          <ul className="list-group mt-2">
+            {suggestions.map((suggestion, index) => (
+              <li
+                key={index}
+                className="list-group-item"
+                onClick={() => selectLocation(suggestion)}
+              >
+                {suggestion}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
-      {/* <!-- Drop-off Location --> */}
-      <div class="form-group mt-3">
-        <label for="dropoffLocation"><strong>Drop-off Location:</strong></label>
+      {/* Drop-off Location */}
+      <div className="form-group mt-3">
+        <label htmlFor="dropoffLocation">
+          <strong>Drop-off Location:</strong>
+        </label>
         <input
           type="text"
           id="dropoffLocation"
-          class="form-control"
-          // [(ngModel)]="dropoffLocation"
-          // (input)="onPickupLocationInput()" 
-          placeholder="Enter drop-off location" />
-        <ul class="list-group mt-2" >
-      {/* //  *ngIf="suggestions.length > 0"> */}
-        <li>
-          {/* class="list-group-item"
-          // *ngFor="let suggestion of suggestions"
-          // (click)="selectPickupLocation(suggestion)" */}
+          className="form-control"
+          value={dropoffLocation}
+          onChange={handleDropoffLocationInput}
+          placeholder="Enter drop-off location"
+        />
+        {suggestions.length > 0 && (
+          <ul className="list-group mt-2">
+            {suggestions.map((suggestion, index) => (
+              <li
+                key={index}
+                className="list-group-item"
+                onClick={() => selectLocation(suggestion)}
+              >
+                {suggestion}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
 
-          {{ suggestion }}
-        </li>
-      </ul>
-    </div><button class="btn btn-primary mt-3" routerLink="/searchbar" type="button">
+      <button className="btn btn-primary mt-3" type="button">
         Search Rides
-      </button><router-outlet></router-outlet>
-  </div>
-  </>
-
+      </button>
+    </div>
   );
 }
