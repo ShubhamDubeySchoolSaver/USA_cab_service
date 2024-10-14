@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -55,29 +57,35 @@ export default function Navbar() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="/"
                   className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                  aria-current="page"
+                  aria-current="page" onClick={() => navigate('/')}
                 >
                   Dashboard
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Team
+                  onClick={() => navigate('/driverHomePage')}>
+                  DriverHomePage
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Projects
+                  onClick={() => navigate('/foodDeliveryHomePage')}>
+                  FoodDeliveryHomePage
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  Calendar
+                  onClick={() => navigate('/resturnantHomePage')}>
+                  ResturnantHomePage
+                </a>
+                \ <a
+                  href="#"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  onClick={() => navigate('/riderHomePage')}>
+                  RiderHomePage
                 </a>
               </div>
             </div>

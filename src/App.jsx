@@ -6,12 +6,18 @@ import DriverHomepage from "./components/driverhomepage/DriverHomepage";
 import Earnings from "./components/driverhomepage/Earnings";
 import Profile from "./components/driverhomepage/Profile";
 import RideRequest from "./components/driverhomepage/RideRequest";
-
+import { BrowserRouter as Router, HashRouter, Routes, Route } from "react-router-dom"
+import Layout from "./pages/layout";
 function App() {
   return (
     <div>
+         
+      <Router>
       <Navbar />
-      <LandingPage></LandingPage>
+      <Layout/>
+      </Router>
+     
+      
 
     </div>
   );
